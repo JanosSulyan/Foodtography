@@ -1,0 +1,423 @@
+/* =============================
+    GENERAL STYLES
+=============================*/
+* {
+    box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,
+h2,
+h3,
+ul,
+ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+    background: whitesmoke;
+    /*url('tree-2068284_1920.jpg') repeat center;*/
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.album,
+.contact {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Vidaloka', serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+}
+
+/* =============================
+      HEADER STYLES
+  =============================*/
+.cover {
+    background: url('ScottChoucino-1-1.jpg') no-repeat 70% center/cover;
+    display: table;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .cover {
+        background: url('ScottChoucino-1-1.jpg') no-repeat center/cover;
+    }
+}
+
+.hero-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero-text {
+    margin: 0 auto;
+    padding: .625rem;
+    color: hsla(0, 0%, 100%, .9);
+    background: hsla(100, 0%, 0%, .5);
+}
+
+.hero-text h1 {
+    font-size: 3.15rem;
+    color: rgb(222, 231, 231);
+    margin-bottom: 0;
+    /* To negate the effect of the single-direction margin declaration. */
+}
+
+@media (min-width: 768px) {
+    .hero-text {
+        padding: 1.75rem;
+        border-radius: 4px;
+        width: 50%;
+    }
+
+    .hero-text h1 {
+        font-size: 4.5rem;
+
+
+    }
+}
+
+.tagline {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+}
+
+@media (min-width: 768px) {
+    .tagline {
+        text-transform: uppercase;
+    }
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+}
+
+.date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+/* =============================
+        LOCATIONS STYLES
+  =============================*/
+.blurb img {
+    height: 13rem;
+
+}
+
+
+
+.blurb h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Vidaloka', serif;
+}
+
+.blurb div {
+    font-family: 'Vidaloka', sans-serif;
+}
+
+.blurb::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+}
+
+@media (min-width: 768px) {
+    .blurb {
+        display: inline-block;
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+
+    .blurb::after {
+        display: none;
+    }
+
+
+}
+
+/* =============================
+          PROGRAM STYLES
+  =============================*/
+.program {
+    width: 100%;
+    text-align: center;
+    background: #324559;
+    color: #ded9d0;
+    font-family: 'Vidaloka', sans-serif;
+
+}
+
+.cont {
+    border: 5px double #f49f04;
+    margin: 10px;
+}
+
+li::before {
+    content: "*";
+    color: #f49f04;
+}
+
+li::after {
+    content: "*";
+    color: #f49f04;
+}
+
+@media (min-width: 768px) {
+    .program {
+        background: #324559;
+
+    }
+
+    .cont {
+        border: 5px double #f49f04;
+        margin: 10px;
+    }
+
+    .program-wrapper {
+
+        width: 30vw;
+        margin: 0 auto;
+    }
+
+    li::before {
+        content: "*";
+        color: #f49f04;
+    }
+
+    li::after {
+        content: "*";
+        color: #f49f04;
+    }
+}
+
+.program h2 {
+    font-family: 'Vidaloka', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.program ul {
+    letter-spacing: .025rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+
+/* =============================
+          GIFTS STYLES
+  =============================*/
+.gifts img {
+    height: 20rem;
+}
+
+p {
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 1.5rem;
+}
+
+.gifts p:last-child {
+    /* To even out the bottom and top margins of this section. */
+    margin-bottom: 0;
+}
+
+/* =============================
+          FAQ STYLES
+  =============================*/
+.album {
+    background: #324559;
+    color: #ded9d0;
+    width: 100%;
+    text-align: center;
+}
+
+.galeria img {
+    height: 13rem;
+}
+
+.galeria h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Vidaloka', serif;
+    font-style: italic;
+}
+
+.galeria div {
+    font-family: 'Vidaloka', sans-serif;
+}
+
+.galeria::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        display: inline-block;
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+
+    .galeria::after {
+        display: none;
+    }
+}
+
+/*.album img {
+    height: 13rem;
+}
+
+
+.album::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: rgba(19, 13, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .description {
+        display: inline-block;
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+
+    .description::after {
+        display: none;
+    }
+}
+
+.description img {
+    height: 15rem;
+}
+
+.album {
+    background: #324559;
+    color: #ded9d0;
+    width: 100%;
+    text-align: center;
+}
+
+.description img {
+    height: 15rem;
+
+}*/
+
+/* =============================
+          FOOTER STYLES
+  =============================*/
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #324559;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: table;
+    text-align: center;
+    font-size: .875rem;
+}
+
+button {
+    background: #f49f04;
+    color: #ded9d0;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Vidaloka', sans-serif;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+.footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer small {
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    footer {
+        min-height: 7vh;
+    }
+
+    button {
+        background: #f49f04;
+        color: #ded9d0;
+        padding: 15px 32px;
+        text-align: center;
+        font-family: 'Vidaloka', sans-serif;
+        cursor: pointer;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+}
